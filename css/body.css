@@ -1,0 +1,438 @@
+/* <!-- 身体部分box --> */
+.imgbox {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-bottom: 25px;
+}
+
+/* <!-- 身体版心 --> */
+.imgbx {
+    width: 1226px;
+    margin: auto;
+}
+
+/* <!-- 第一张图片，海报 --> */
+.posters {
+    margin: 25px 0;
+    height: 120px;
+    cursor: pointer;
+}
+
+/* <!-- 手机那一条的样式 --> */
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort h2 {
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 58px;
+}
+
+/* <!-- 手机右边部分 --> */
+.other {
+    display: flex;
+    align-items: center;
+}
+
+.other a {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.other:hover a {
+    color: #ff6700;
+    transition: all 0.2s;
+}
+
+.other i {
+    font-size: 24px;
+    color: #b0b0b0;
+}
+
+.other:hover i {
+    color: #ff6700;
+    transition: all 0.2s;
+}
+
+/* <!-- 手机模块的box --> */
+.product {
+    height: 628px;
+    display: flex;
+}
+
+/* <!-- 最左边那张大图 --> */
+.leftimg {
+    width: 234px;
+    cursor: pointer;
+    height: 614px;
+    transition: all 0.3s;
+}
+
+.leftimg:hover {
+    /* 阴影范围 x 偏移量 y 偏移量 阴影模糊半径 阴影颜色 */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    /* 在y轴上向上偏移2px */
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* <!-- 一整个白框box --> */
+.goodsbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* <!-- 一个白框 --> */
+.goods {
+    width: 235px;
+    height: 300px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 12px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.goods:hover {
+    /* 阴影范围 x 偏移量 y 偏移量 阴影模糊半径 阴影颜色 */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    /* 在y轴上向上偏移2px */
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* 产品图片 */
+.productimg {
+    width: 160px;
+    height: 160px;
+    padding-top: 20px;
+}
+
+/* 手机名称 */
+.phone {
+    width: 220px;
+    margin: auto;
+    margin-top: 15px;
+    /* 用省略号“…”隐藏超出范围的文本 */
+    text-overflow: ellipsis;
+    /* 超出隐藏 */
+    overflow: hidden;
+    /* 让文字一行显示不换行 */
+    white-space: nowrap;
+}
+
+/* <!-- 介绍 --> */
+.introducetext {
+    font-size: 12px;
+    color: #b0b0b0;
+    width: 211px;
+    /* 用省略号“…”隐藏超出范围的文本 */
+    text-overflow: ellipsis;
+    /* 超出隐藏 */
+    overflow: hidden;
+    /* 让文字一行显示不换行 */
+    white-space: nowrap;
+    margin: auto;
+}
+
+/* 价格 */
+.price {
+    margin-top: 10px;
+    color: #ff6700;
+}
+
+/* 旧价格 */
+.oldprice {
+    color: #b0b0b0;
+    margin-left: 6px;
+}
+
+/* 智能穿戴最右边有两个选项 */
+.other2 {
+    display: flex;
+    align-items: center;
+}
+
+/* 默认第一项选中 */
+.other2 :nth-child(1) {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+/* 选项样式 */
+.hot {
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20px;
+    transition: all 0.3s;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+/* 智能穿戴 穿戴模块隐藏 */
+.zncd2 {
+    display: none;
+}
+
+/* 浏览更多那个box */
+.morebox {
+    width: 235px;
+    height: 143px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 12px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.morebox:hover {
+    /* 阴影范围 x 偏移量 y 偏移量 阴影模糊半径 阴影颜色 */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    /* 在y轴上向上偏移2px */
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* <!-- 浏览更多 --> */
+.more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* 文字 */
+.moretext {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.moretext span {
+    font-size: 12px;
+    color: #757575;
+}
+
+/* 图标 */
+.more i {
+    font-size: 45px;
+    color: #ff6700;
+    margin-right: 40px;
+    font-weight: 550;
+}
+
+/* 浏览更多那边有两块 */
+.moretwo {
+    display: flex;
+    flex-direction: column;
+    height: 314px;
+}
+
+/* 小产品信息 */
+.more-goodstext {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 30px;
+
+}
+
+.more-goodstext p {
+    margin-top: 4px;
+    color: #ff6700;
+}
+
+/* 小图片 */
+.more-smallimg {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+/* <!-- 左边图片有两块 --> */
+.left-twoimg {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 第一张 */
+.left-topimg {
+    width: 234px;
+    height: 300px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+
+.left-topimg:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* 第二张 */
+.left-bottomimg {
+    width: 234px;
+    height: 300px;
+    transition: all 0.3s;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+
+.left-bottomimg:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* 家电 电视影音隐藏 */
+.jd2 {
+    display: none;
+}
+
+/* 生活电器 空净隐藏 */
+.shdq2 {
+    display: none;
+}
+
+/* 生活电器 清洁隐藏 */
+.shdq3 {
+    display: none;
+}
+
+/* 生活电器 风扇隐藏 */
+.shdq4 {
+    display: none;
+}
+
+/* 厨房电器 烟灶隐藏 */
+.cfdq2 {
+    display: none;
+}
+
+/* 厨房电器 电饭煲隐藏 */
+.cfdq3 {
+    display: none;
+}
+
+/* 厨房电器 微蒸烤隐藏 */
+.cfdq4 {
+    display: none;
+}
+
+/* 智能家居 门锁隐藏 */
+.znjj2 {
+    display: none;
+}
+
+/* 智能家居 路由器隐藏 */
+.znjj3 {
+    display: none;
+}
+
+/* 智能家居 智能设备隐藏 */
+.znjj4 {
+    display: none;
+}
+
+/* 运动出行 运动健康隐藏 */
+.ydcx2 {
+    display: none;
+}
+
+/* 运动出行 箱包配饰隐藏 */
+.ydcx3 {
+    display: none;
+}
+
+/* 运动出行 出行工具隐藏 */
+.ydcx4 {
+    display: none;
+}
+
+/* 日用百货 电源/线材隐藏 */
+.rybh2 {
+    display: none;
+}
+
+/* 日用百货 儿童用品隐藏 */
+.rybh3 {
+    display: none;
+}
+
+/* 日用百货 家居床品隐藏 */
+.rybh4 {
+    display: none;
+}
+
+/* 视频box */
+.videobox {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 整个白框 */
+.video {
+    width: 296px;
+    height: 285px;
+    background-color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.video:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* 上半部分 */
+.videotop {
+    position: relative;
+}
+
+.videotop:hover i {
+    background-color: #ff6700;
+    border: 2px solid #ff6700;
+
+}
+
+.videotop img {
+    width: 296px;
+    height: 180px;
+}
+
+.icon-24gf-play {
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1px 10px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+}
+
+/* 标题 */
+.video h3 {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.video p {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #b0b0b0;
+}

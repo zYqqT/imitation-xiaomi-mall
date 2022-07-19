@@ -1,0 +1,279 @@
+/* <!-- 底部导航栏 --> */
+.bottomnav {
+    width: 100%;
+    height: 473px;
+    background-color: #fff;
+}
+/* <!-- 版心 --> */
+.bottombx {
+    width: 1226px;
+    margin: auto;
+}
+/* <!-- 框 --> */
+.list-service {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+/* <!-- 每一块 --> */
+.listtext {
+    padding: 27px 0;
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    padding-left: 61px;
+    padding-right: 57px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #616161;
+    border-right: 1px solid #e0e0e0;
+
+}
+.listtext i {
+    font-size: 24px;
+    margin-right: 2px;
+}
+.listtext:hover a {
+    color: #ff6700;
+    transition: all 0.6s;
+}
+/* 1100余家售后网点 */
+.item1 {
+    padding-right: 0px;
+    border: none;
+}
+
+/* <!-- 下面的框 --> */
+.footer {
+    display: flex;
+}
+/* <!-- 每一列 --> */
+.footer-dl {
+    width: 160px;
+}
+/* 导航栏 */
+.footer-dl dt {
+    font-size: 14px;
+    color: #474747;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+/* 具体选项 */
+.footer-dl dd {
+    font-size: 12px;
+    color: #757575;
+    margin: 10px auto;
+}
+
+.footer-dl dd:hover {
+    color: #ff6700;
+    cursor: pointer;
+}
+/* 右边信息 */
+.footer-msg {
+    height: 90px;
+    line-height: 40px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    margin-top: 40px;
+    padding-left: 82px;
+    align-items: center;
+}
+/* 电话号码 */
+.footer-msgphone {
+    color: #ff6700;
+    font-size: 22px;
+}
+/* 时间 */
+.footer-tips {
+    font-size: 12px;
+    color: #616161;
+}
+/* 人工客服的button */
+.callshe {
+    border: 1px solid #ff6700;
+    font-size: 12px;
+    color: #ff6700;
+    padding: 8px 24px;
+}
+
+.callshe:hover {
+    background-color: #ff6700;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s;
+}
+/* <!-- 底部信息栏 --> */
+.bottomlast {
+    width: 100%;
+    background-color: #fafafa;
+}
+/* <!-- 版心 --> */
+.lastbx {
+    width: 1226px;
+    margin: auto;
+}
+/* <!-- 有字的框 --> */
+.lastbox {
+    display: flex;
+}
+/* <!-- 小米logo --> */
+.lastimg {
+    width: 56px;
+    height: 56px;
+    margin-top: 28px;
+}
+/* 信息导航 */
+.lastmsg {
+    margin-top: 28px;
+    margin-left: 21px;
+}
+
+.lastnav a {
+    font-size: 12px;
+    color: #757575;
+    margin-top: 1px;
+}
+
+.lastnav a:hover {
+    color: #ff6700;
+}
+/* 信息 */
+.lastnav2 {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.lastnav2 a {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.lastnav2 a:hover {
+    color: #ff6700;
+}
+/* <!-- 商标区 --> */
+.lastlogo {
+    display: flex;
+    margin-left: 75px;
+    margin-top: 2px;
+    position: relative;
+}
+
+.lastlogo img {
+    width: 83px;
+    height: 28px;
+}
+/* 最后一张有动画 */
+.imgactive {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 332px;
+}
+/* 最后一张的图 */
+.imgfinally {
+    text-align: center;
+    background: url('../img/slogan2020.png') no-repeat center;
+    width: 100%;
+    height: 19px;
+    padding: 40px 0;
+}
+/* <!-- 右边视窗定位模块 --> */
+.rightbox {
+    position: fixed;
+    right: 0;
+    bottom: 70px;
+    z-index: 99;
+
+}
+/* <!-- 一个框 --> */
+.right {
+    width: 82px;
+    height: 90px;
+    background-color: #fff;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #f5f1f1;
+    justify-content: center;
+    transition: all 0.1s;
+    border-left: 1px solid #f5f1f1;
+
+}
+.right:hover {
+    color: #ff6700;
+}
+.right i {
+    font-size: 30px;
+}
+/* 手机app */
+.r1 {
+    position: relative;
+}
+/* 小三角 */
+.sanjiao2 {
+    border: 10px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    content: "";
+    z-index: 50;
+    top: 34px;
+    right: 72px;
+    display: none;
+}
+/* 下载的二维码 */
+.downimg2 {
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    right: 92px;
+    z-index: 50;
+    color: #757575;
+    text-align: center;
+    padding: 18px 18px;
+    margin-top: 2px;
+    display: none;
+    border: 1px solid #e0e0e0;
+
+}
+.downimg2 img {
+    width: 90px;
+    height: 90px;
+}
+
+.r1:hover .downimg2 {
+    display: block;
+}
+
+.r1:hover .sanjiao2 {
+    display: block;
+}
+/* 回到顶部 */
+.r2 {
+    width: 82px;
+    height: 90px;
+    background-color: #fff;
+    color: #757575;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f5f1f1;
+    justify-content: center;
+    transition: all 0.1s;
+    margin-top: 10px;
+    
+}
+.r2 i{
+    font-size: 30px;
+}
+.r2:hover {
+    color: #ff6700;
+}

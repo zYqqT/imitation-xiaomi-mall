@@ -1,0 +1,544 @@
+/* 头部 */
+.top {
+    height: 40px;
+    background-color: #333;
+}
+
+/* <!-- 头部导航栏 --> */
+.topnav {
+    width: 1226px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 文字 */
+.toptext a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 40px;
+    padding: 0 1px;
+    position: relative;
+}
+
+.toptext a:hover {
+    color: #fff;
+}
+
+.toptext span {
+    color: #424242;
+    margin: 2px;
+}
+
+
+/*小三角形 */
+.sanjiao {
+    border: 7px solid transparent;
+    border-bottom: 7px solid ghostwhite;
+    position: absolute;
+    content: "";
+    z-index: 50;
+    top: 14px;
+    right: 18px;
+    display: none;
+}
+
+/* 下载App的二维码 */
+.downimg {
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+    right: -40px;
+    z-index: 50;
+    color: #333;
+    text-align: center;
+    padding: 18px 18px;
+    box-shadow: 0 0 10px rgba(170, 170, 170, 0.6);
+    margin-top: 2px;
+    display: none;
+}
+
+.downimg img {
+    width: 90px;
+    height: 90px;
+}
+
+.user-adown:hover .sanjiao {
+    display: block;
+}
+
+.user-adown:hover .downimg {
+    display: block;
+}
+
+
+
+/* 登入注册box */
+.topuser {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* 登入注册 */
+.user-a {
+    padding: 0 2px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 40px;
+}
+
+.user-a:hover {
+    color: #fff;
+}
+
+/* 购物车 */
+.topcar {
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 21px;
+    background-color: #424242;
+    margin-left: 15px;
+    font-size: 12px;
+    color: #b0b0b0;
+    /* 移入的动画 */
+    transition: all 0.1s;
+    z-index: 20;
+
+}
+
+.topcar:hover {
+    color: #ff6700;
+    background-color: #fff;
+}
+
+/* 购物车的图标 */
+.topcar i {
+    font-size: 20px
+}
+
+.topcar-title {
+    width: 270px;
+    height: 0px;
+    line-height: 98px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px rgba(130, 130, 130, 0.6);
+
+}
+
+.topcar:hover .topcar-title {
+    height: 98px;
+    color: #333;
+    transition: all .5s;
+}
+
+/* <!-- 搜索那一栏 --> */
+.topbanbox {
+    position: relative;
+}
+
+/* 搜索版心 */
+.topbanner {
+    width: 1226px;
+    height: 100px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* 小米logo */
+.topbanner img {
+    width: 56px;
+    height: 56px;
+}
+
+/* <!-- 手机导航栏 --> */
+.banner {
+    margin-left: 110px;
+}
+
+.banner a {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+}
+
+.banner a:hover {
+    color: #ff6700;
+}
+
+/* <!-- 搜索框 --> */
+.bainput {
+    height: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* <!-- input框 --> */
+.inputk {
+    /* 外边框没有 */
+    outline: none;
+    width: 240px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    /* 文字向里缩进20px */
+    text-indent: 20px;
+}
+
+/* 搜索的图标 */
+.bainput i {
+    width: 50px;
+    height: 48px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+    line-height: 48px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.bainput i:hover {
+    background-color: #ff6700;
+    color: #fff;
+    border-color: #ff6700;
+}
+
+.bainput:hover .inputk {
+    border-color: #b0b0b0;
+}
+
+.bainput:hover.bainput i {
+    border-color: #b0b0b0;
+}
+
+/* <!-- 搜索框下面的内容 --> */
+.inputcon {
+    width: 239px;
+    position: absolute;
+    top: 76px;
+    right: 198px;
+    z-index: 30;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    background-color: #fff;
+    display: none;
+}
+
+.inputmain {
+    font-size: 12px;
+    padding: 10px 10px;
+}
+
+.inputmain:hover {
+    background-color: #ebebeb83;
+}
+
+/* <!-- 手机导航栏内具体详情  --> */
+.banbox {
+    width: 100%;
+    position: absolute;
+    top: 98px;
+    background-color: #fff;
+    z-index: 10;
+    border-top: 1px solid rgb(0 0 0 / 18%);
+    -webkit-box-shadow: 0 3px 4px rgb(0 0 0 / 18%);
+    box-shadow: 0 3px 4px rgb(0 0 0 / 18%);
+    transition: height .4s;
+    overflow: hidden;
+    height: 0;
+}
+
+/* 版心 */
+.banbx {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+/* 一整条框 */
+.banmain {
+    padding: 42px 20px;
+}
+
+/* 手机信息一小块 */
+.maincon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgb(0 0 0 / 18%);
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+.mainconimg {
+    width: 160px;
+    height: 110px;
+}
+
+.maincon span {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.maincon p {
+    font-size: 12px;
+    color: #ff6700;
+    margin-top: 2px;
+
+}
+
+.maincon:first-child {
+    border-left: none;
+}
+
+
+/* <!-- 轮播图模块 --> */
+.bigbody {
+    width: 1226px;
+    height: 675px;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+}
+
+/* 轮播图 */
+.swiperimg {
+    position: relative;
+    width: 1226px;
+    height: 460px;
+}
+
+/* 默认第一张显示 */
+.swiperimg :nth-child(1) {
+    opacity: 1;
+}
+
+/* 图片 */
+.swiperitem {
+    width: 1226px;
+    height: 460px;
+    position: absolute;
+    transition: all 2s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* 图标 */
+.swiperimg i {
+    font-size: 40px;
+    color: rgba(170, 170, 170, 0.6);
+    width: 40px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* 上一页 */
+.icon-shangyiye {
+    position: absolute;
+    top: 50%;
+    /* 在Y轴反方向减少自身的50% */
+    transform: translateY(-50%);
+    left: 234px;
+}
+
+/* 下一页 */
+.icon-xiayiye {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.swiperimg i:hover {
+    color: rgb(225, 225, 225);
+    background-color: rgba(10, 10, 10, 0.5);
+}
+
+/* <!-- 指示点 --> */
+.swipercircle {
+    position: absolute;
+    bottom: 237px;
+    right: 36px;
+    z-index: 20;
+    display: flex;
+}
+
+/* 一个点 */
+.clickcircle {
+    width: 6px;
+    height: 6px;
+    border: 2px solid #b0b0b0;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: rgba(10, 10, 10, 0.5);
+    cursor: pointer;
+    /* background-color: #757575; */
+}
+
+.clickcircle:first-child {
+    background-color: #fff;
+}
+
+
+/* 黑色那一模块 */
+.bodynav {
+    width: 234px;
+    background: rgba(105, 101, 101, .6);
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 每一条li */
+.navli {
+    position: relative;
+}
+
+.bodynav a {
+    color: #fff;
+    font-size: 14px;
+    height: 42px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bodynav a:hover {
+    background-color: #ff6700;
+}
+
+/* 箭头  >   */
+.bodynav a::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: solid rgb(215, 213, 213);
+    /* 箭头宽度 */
+    border-width: 0 3px 3px 0;
+    /* 旋转角度 */
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 17px;
+    right: 26px;
+}
+
+/* 具体的内容框 */
+.sjdiv {
+    /* width: 992px; */
+    height: 460px;
+    background-color: #fff;
+    z-index: 20;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 234px;
+    box-shadow: 0 0 10px rgba(170, 170, 170, 0.6);
+}
+/* 一列内容 */
+.sjconbox {
+    width: 248px;
+    flex-direction: column;
+}
+/* 一小块 */
+.sjcon {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    transition: all 0.1s;
+}
+
+.sjcon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.sjcon:hover {
+    color: #ff6700;
+}
+
+/* 保障服务模块 */
+.bodyhelp {
+    height: 170px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* <!-- 保障服务box --> */
+.helpsbox {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* <!-- 一小块 --> */
+.helps {
+    width: 77px;
+    height: 85px;
+    background-color: #5f5750;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #757575;
+    border-right: 1px solid #757575;
+}
+
+.helps i {
+    font-size: 22px;
+    color: #fff;
+    padding-top: 14px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.helpsbox .helps:hover i {
+    opacity: 1;
+}
+
+.helps a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.helpsbox .helps:hover a {
+    opacity: 1;
+}
+
+/* <!-- 三张并排的图 --> */
+.helpimg {
+    margin-top: 1px;
+}
+
+.helpimg img {
+    width: 316px;
+    height: 170px;
+    cursor: pointer;
+    margin-left: 10px;
+}
