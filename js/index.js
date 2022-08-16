@@ -246,8 +246,19 @@ window.onscroll = function () {
 function backtop() {
     window.scrollTo(0, 0);
 }
+// 视频播放显示
+var videoplaybox = document.querySelectorAll('.videoplaybox');
+function playVideo(n) {
+    console.log(videoplaybox.style);
+    videoplaybox[n].style.display = 'block';
 
-
+}
+// 视频播放隐藏
+function hidevideo() {
+    for (var i = 0; i < videoplaybox.length; i++) {
+        videoplaybox[i].style.display = 'none';
+    }
+}
 
 
 

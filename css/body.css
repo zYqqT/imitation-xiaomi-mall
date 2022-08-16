@@ -436,3 +436,68 @@
     font-size: 12px;
     color: #b0b0b0;
 }
+
+/* 黑透色大框 */
+.videoplaybox {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/* 视频框 */
+.videoplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 880px;
+}
+
+/* 标题文字框 */
+.videoplaytext {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.videospan {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.closedbtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.closedbtn:hover {
+    background-color: #e53935;
+}
+
+/* 关闭 */
+.icon-guanbi {
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.closedbtn:hover .icon-guanbi {
+    color: #fff;
+}
+
+/* 视频 */
+.videomain {
+    width: 880px;
+}
