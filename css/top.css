@@ -400,6 +400,10 @@
     background-color: #fff;
 }
 
+.clickcircle:hover {
+    background-color: #fff !important;
+
+}
 
 /* 黑色那一模块 */
 .bodynav {
@@ -445,24 +449,30 @@
     top: 17px;
     right: 26px;
 }
-
 /* 具体的内容框 */
+.content {
+    position: absolute;
+    top: 0px;
+    left: 234px;
+}
+
+/* 手机 */
 .sjdiv {
     /* width: 992px; */
     height: 460px;
     background-color: #fff;
     z-index: 20;
     display: none;
-    position: absolute;
-    top: 0px;
-    left: 234px;
+
     box-shadow: 0 0 10px rgba(170, 170, 170, 0.6);
 }
+
 /* 一列内容 */
 .sjconbox {
     width: 248px;
     flex-direction: column;
 }
+
 /* 一小块 */
 .sjcon {
     display: flex;

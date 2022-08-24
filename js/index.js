@@ -126,6 +126,17 @@ function handlecircle(n) {
     nextswiper();
 }
 
+
+// 轮播图悬停
+var swiperimg = document.getElementsByClassName('swiperimg')[0];
+swiperimg.addEventListener('mouseover',()=>{
+    clearInterval(t);
+})
+swiperimg.addEventListener('mouseout',()=>{
+    playcircles();
+    playswiper();
+})
+
 // 黑色那一模块里的内容展示
 function showdata(n) {
     var sjdiv = document.getElementsByClassName('sjdiv');
